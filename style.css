@@ -168,7 +168,7 @@ h1 {
   margin-top: var(--flow-space, 1em);
 }
 
-.container[container-height="full"] {
+.container[data-container-height="full"] {
   display: flex;
   align-items: center;
   height: calc(100vh - var(--h-height));
@@ -176,7 +176,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  .content-wrapper[content-width="half"] {
+  .content-wrapper[data-content-width="half"] {
     width: 40%;
   }
 }
@@ -204,22 +204,22 @@ h1 {
   position: relative;
 }
 
-.button[button-type="primary"] {
+.button[data-button-type="primary"] {
   background: var(--primary-colour);
   color: white;
   border-radius: 5px;
 }
 
-.button[button-type="primary"]:is(:hover, :focus) {
+.button[data-button-type="primary"]:is(:hover, :focus) {
   background-color: #4e12db;
 }
 
-.button[button-type="secondary"] {
+.button[data-button-type="secondary"] {
   background: none;
   color: white;
 }
 
-.button[button-type="secondary"]>.button-label:after {
+.button[data-button-type="secondary"]>.button-label:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -232,7 +232,7 @@ h1 {
   transition: transform 0.25s ease-out;
 }
 
-.button[button-type="secondary"]:is(:hover, :focus) .button-label:after {
+.button[data-button-type="secondary"]:is(:hover, :focus) .button-label:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
